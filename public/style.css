@@ -62,7 +62,7 @@ a {
 
 .gallery-body {
   margin: auto;
-  height: 1000px;
+  height: auto;
   background-color: cornsilk;
   max-width: 1200px;
 }
@@ -131,13 +131,16 @@ img {
   display: flex;
   justify-content: center;
   margin: auto;
-  max-width: 1200px;
+  max-width: 870px;
 }
 
 /* Lightbox Below */
 
 .row {
-  padding-left: 200px;
+  display: flex;
+  max-width: 900px;
+  margin: auto;
+  flex-wrap: wrap;
 }
 
 .row > .column {
@@ -146,15 +149,15 @@ img {
 
 .row:after {
   content: "";
-  display: table;
+  display: flex;
   clear: both;
 }
 
 /* Create four equal columns that floats next to eachother */
-.column {
+/* .column {
   float: left;
   width: 25%;
-}
+} */
 
 /* The Modal (background) */
 .modal {
@@ -259,7 +262,13 @@ img.demo {
 }
 
 img.hover-shadow {
+  max-width: 200px;
+  max-height: 200px;
   transition: 0.3s;
+}
+
+.shadow {
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.5);
 }
 
 .hover-shadow:hover {
