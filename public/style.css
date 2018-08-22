@@ -9,29 +9,25 @@ body {
   margin: auto;
 }
 
-/* .ribbon {
-  display: flex;
-  max-width: 80%;
-  height: auto;
-  margin: auto;
-} */
-
 #welcomeimage {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: auto;
 }
 
 img {
+  display: block;
   max-width: 100%;
+  margin: 0px;
   height: auto;
-  margin: auto;
 }
 
 .navbar {
   display: flex;
+  margin-top: 0px;
   font-family: Georgia, "Times New Roman", Times, serif;
   border-bottom: 2px solid rgb(53, 26, 4);
-  max-width: 1200px;
+  border-top: 2px solid rgb(53, 26, 4);
+  max-width: 1000px;
   margin: auto;
   height: 50px;
   justify-content: center;
@@ -54,21 +50,23 @@ a {
 }
 
 .mainbody {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: auto;
   background-color: cornsilk;
   height: auto;
+}
+
+#addname {
+  width: 100px;
+  height: 100px;
 }
 
 .gallery-body {
   margin: auto;
   height: auto;
   background-color: cornsilk;
-  max-width: 1200px;
-}
-
-img {
-  max-width: 100%;
+  max-width: 1000px;
+  padding-top: px;
 }
 
 .welcome-banner {
@@ -80,11 +78,11 @@ img {
 .home-image-container {
   display: flex;
   justify-content: space-around;
-  max-width: 1200px;
+  max-width: 1000px;
   padding-top: 60px;
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-bottom: 120px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 80px;
   height: 400px;
 }
 
@@ -110,13 +108,13 @@ img {
 
 .footer-strip {
   background-color: rgb(53, 26, 4);
-  max-width: 1200px;
+  max-width: 1000px;
   height: 50px;
   margin: auto;
 }
 
 .footer {
-  max-width: 1200px;
+  max-width: 1000px;
   background-color: cornsilk;
   height: 80px;
 }
@@ -132,13 +130,12 @@ img {
   justify-content: center;
   margin: auto;
   max-width: 870px;
+  padding-bottom: 50px;
 }
-
-/* Lightbox Below */
 
 .row {
   display: flex;
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
   flex-wrap: wrap;
 }
@@ -153,13 +150,6 @@ img {
   clear: both;
 }
 
-/* Create four equal columns that floats next to eachother */
-/* .column {
-  float: left;
-  width: 25%;
-} */
-
-/* The Modal (background) */
 .modal {
   display: none;
   position: fixed;
@@ -176,14 +166,13 @@ img {
 /* Modal Content */
 .modal-content {
   position: relative;
-  background-color: #fefefe;
+  display: block;
+  background-color: black;
   margin: auto;
   padding: 0;
-  width: 90%;
-  max-width: 1200px;
+  max-width: 800px;
 }
 
-/* The Close Button */
 .close {
   color: white;
   position: absolute;
@@ -200,12 +189,10 @@ img {
   cursor: pointer;
 }
 
-/* Hide the slides by default */
 .mySlides {
   display: none;
 }
 
-/* Next & previous buttons */
 .prev,
 .next {
   cursor: pointer;
@@ -223,19 +210,16 @@ img {
   -webkit-user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -244,7 +228,6 @@ img {
   top: 0;
 }
 
-/* Caption text */
 .caption-container {
   text-align: center;
   background-color: black;
