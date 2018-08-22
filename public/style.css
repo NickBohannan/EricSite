@@ -141,7 +141,7 @@ a {
 }
 
 .row > .column {
-  padding: 0 8px;
+  padding: 8px;
 }
 
 .row:after {
@@ -167,10 +167,12 @@ a {
 .modal-content {
   position: relative;
   display: block;
+  justify-content: center;
   background-color: black;
   margin: auto;
   padding: 0;
   max-width: 800px;
+  height: 800px;
 }
 
 .close {
@@ -191,13 +193,18 @@ a {
 
 .mySlides {
   display: none;
+  margin: auto;
+}
+
+.mySlides img {
+  margin: auto;
 }
 
 .prev,
 .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 10%;
   width: auto;
   padding: 16px;
   margin-top: -50px;
@@ -222,10 +229,11 @@ a {
 
 .numbertext {
   color: #f2f2f2;
-  font-size: 12px;
+  font-size: 18px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
+  margin: auto;
 }
 
 .caption-container {
